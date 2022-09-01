@@ -1,5 +1,5 @@
-from application import salary
-from application.db import people
+from application.salary import calculate_salary
+from application.db.people import get_employees
 from datetime import date
 
 
@@ -16,5 +16,5 @@ def current_date():
 if __name__ == '__main__':
     current_date()
     print_hi('Сергей')
-    salary.calculate_salary('1111')
-    people.get_employees('Сергей')
+    calculate_salary('1111')
+    get_employees('Сергей')
